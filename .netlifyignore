@@ -1,0 +1,4 @@
+.tools/
+.netlify/
+.git/
+_netlify_upload/
