@@ -19,10 +19,7 @@
 - Instagram: `@kuhni.mira.kz`.
 - Адрес: Уральск, пр. Абулхаир Хана, 175.
 - Отзывы оформлены скринами из приложенных изображений 2ГИС.
-- Фото мебели и интерьеров взяты с Unsplash и Pexels:
-  - https://unsplash.com/photos/Jl5BfxX089Q
-  - https://unsplash.com/photos/pQVP5QmskxM
-  - https://unsplash.com/photos/o98pufp8Khk
-  - https://www.pexels.com/photo/7031842/
-  - https://www.pexels.com/photo/34000142/
-  - https://www.pexels.com/photo/14495937/
+- Фото мебели и интерьеров заменены на изображения, переданные заказчиком:
+  `client-kitchen-warm.jpeg`, `client-tv-light.jpeg`,
+  `client-living-tall.jpg`, `client-living-fireplace.jpg`,
+  `client-tv-luxury.jpeg`.
