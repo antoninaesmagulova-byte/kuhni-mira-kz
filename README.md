@@ -1,8 +1,8 @@
 # Кухни мира
 
-Статический лендинг для компании «Кухни мира»: производство индивидуальной
-мебели, кухни, корпусная мебель, мебель для ванной, фасады, фурнитура,
-столешницы, подоконники и литые мойки из искусственного камня.
+Короткий статический лендинг для компании «Кухни мира»: мебель на заказ в
+Уральске, кухни, шкафы, гардеробные, мебель для ванной, прихожие и другая
+корпусная мебель по индивидуальному проекту.
 
 ## Как открыть
 
@@ -12,15 +12,17 @@
 
 - Логотип: `assets/kuhni-mira-logo.png`.
 - Фото основателя: `assets/founder-portrait.jpeg`.
+- Основатель: Антонина, более 15 лет в мебели, основатель фабрики мебели
+  «5 звезд», более 10 000 реализованных проектов.
 - Телефон: `+7 708 479 1010`.
 - WhatsApp: `+7 702 563 0603`.
 - Instagram: `@kuhni.mira.kz`.
 - Адрес: Уральск, пр. Абулхаир Хана, 175.
 - Отзывы оформлены скринами из приложенных изображений 2ГИС.
-- Основатель: Антонина, 15 лет в мебели, основатель фабрики мебели «5 звезд»,
-  более 10 000 реализованных проектов.
-- Светлые референс-фото кухонь взяты с Unsplash:
-  - https://unsplash.com/photos/modern-kitchen-with-light-wood-cabinets-and-island-Jl5BfxX089Q
-  - https://unsplash.com/photos/modern-white-kitchen-with-island-and-large-window-pQVP5QmskxM
-  - https://unsplash.com/photos/modern-kitchen-with-island-and-bar-stools-qslhV6cdYGw
-  - https://unsplash.com/photos/a-modern-kitchen-with-light-wood-countertops-and-island-mhDeeOvBs9o
+- Фото мебели и интерьеров взяты с Unsplash и Pexels:
+  - https://unsplash.com/photos/Jl5BfxX089Q
+  - https://unsplash.com/photos/pQVP5QmskxM
+  - https://unsplash.com/photos/o98pufp8Khk
+  - https://www.pexels.com/photo/7031842/
+  - https://www.pexels.com/photo/34000142/
+  - https://www.pexels.com/photo/14495937/
