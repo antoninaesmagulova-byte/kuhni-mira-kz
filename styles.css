@@ -129,9 +129,9 @@ button {
 
 .brand-mark {
   display: grid;
-  width: 46px;
-  height: 46px;
-  flex: 0 0 46px;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
   place-items: center;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.44);
@@ -152,10 +152,10 @@ button {
 }
 
 .brand-text strong {
-  font-family: var(--font-display);
-  font-size: 1.24rem;
-  font-weight: 700;
+  font-size: 0.98rem;
+  font-weight: 900;
   line-height: 1;
+  letter-spacing: 0.04em;
 }
 
 .brand-text small {
@@ -790,14 +790,18 @@ button {
   }
 
   .site-header {
-    min-height: 68px;
+    min-height: 76px;
     padding: 10px 14px;
   }
 
   .brand-mark {
-    width: 40px;
-    height: 40px;
-    flex-basis: 40px;
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+  }
+
+  .brand-text strong {
+    font-size: 0.86rem;
   }
 
   .brand-text small {
