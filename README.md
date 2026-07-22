@@ -1,8 +1,8 @@
 # Кухни мира
 
-Статический лендинг для компании «Кухни мира»: кухни и мебель на заказ,
-фасады, фурнитура, столешницы, подоконники и литые мойки из искусственного
-камня.
+Статический лендинг для компании «Кухни мира»: производство индивидуальной
+мебели, кухни, корпусная мебель, мебель для ванной, фасады, фурнитура,
+столешницы, подоконники и литые мойки из искусственного камня.
 
 ## Как открыть
 
@@ -11,15 +11,16 @@
 ## Использованные данные
 
 - Логотип: `assets/kuhni-mira-logo.png`.
+- Фото основателя: `assets/founder-portrait.jpeg`.
 - Телефон: `+7 708 479 1010`.
 - WhatsApp: `+7 702 563 0603`.
 - Instagram: `@kuhni.mira.kz`.
 - Адрес: Уральск, пр. Абулхаир Хана, 175.
-- Отзывы перенесены из приложенных скриншотов.
-- Фото: главный кадр с кухней сгенерирован для макета и сохранен в `assets/kitchens-world-hero.png`.
-- Референс-фото кухонь скачаны с Pexels:
-  - https://www.pexels.com/photo/modern-kitchen-with-marble-countertop-and-wooden-cabinets-36777559/
-  - https://www.pexels.com/photo/luxury-modern-kitchen-20348123/
-  - https://www.pexels.com/photo/interior-of-a-modern-kitchen-15220866/
-  - https://www.pexels.com/photo/elegant-modern-kitchen-with-marble-island-37153440/
-  - https://www.pexels.com/photo/modern-kitchen-interior-with-stylish-fixtures-36777553/
+- Отзывы оформлены скринами из приложенных изображений 2ГИС.
+- Основатель: Антонина, 15 лет в мебели, основатель фабрики мебели «5 звезд»,
+  более 10 000 реализованных проектов.
+- Светлые референс-фото кухонь взяты с Unsplash:
+  - https://unsplash.com/photos/modern-kitchen-with-light-wood-cabinets-and-island-Jl5BfxX089Q
+  - https://unsplash.com/photos/modern-white-kitchen-with-island-and-large-window-pQVP5QmskxM
+  - https://unsplash.com/photos/modern-kitchen-with-island-and-bar-stools-qslhV6cdYGw
+  - https://unsplash.com/photos/a-modern-kitchen-with-light-wood-countertops-and-island-mhDeeOvBs9o
