@@ -23,3 +23,4 @@
   `client-kitchen-warm.jpeg`, `client-tv-light.jpeg`,
   `client-living-tall.jpg`, `client-living-fireplace.jpg`,
   `client-tv-luxury.jpeg`.
+- Превью для WhatsApp и соцсетей: `assets/social-preview.jpg`.
