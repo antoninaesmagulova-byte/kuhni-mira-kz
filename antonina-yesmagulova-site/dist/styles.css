@@ -150,10 +150,16 @@ button {
   color: var(--olive);
 }
 
-.nav-instagram {
+.nav-instagram,
+.nav-pdf {
   border: 1px solid currentColor;
   border-radius: 999px;
   padding: 9px 13px !important;
+}
+
+.nav-pdf {
+  background: var(--white);
+  color: var(--black);
 }
 
 .menu-toggle {
@@ -309,7 +315,9 @@ h1 {
 }
 
 .instagram-link,
-.final-instagram {
+.final-instagram,
+.hero-pdf,
+.final-pdf {
   color: rgba(255, 253, 250, 0.78);
   font-size: 0.92rem;
   font-weight: 850;
@@ -319,7 +327,11 @@ h1 {
 .instagram-link:hover,
 .instagram-link:focus-visible,
 .final-instagram:hover,
-.final-instagram:focus-visible {
+.final-instagram:focus-visible,
+.hero-pdf:hover,
+.hero-pdf:focus-visible,
+.final-pdf:hover,
+.final-pdf:focus-visible {
   color: var(--sand);
 }
 
@@ -673,6 +685,11 @@ h1 {
   margin-top: 22px;
 }
 
+.final-pdf {
+  display: inline-flex;
+  margin-top: 14px;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(22px);
@@ -790,10 +807,13 @@ h1 {
     text-align: center;
   }
 
-  .nav-instagram {
+  .nav-instagram,
+  .nav-pdf {
     border: 0;
     border-bottom: 1px solid var(--line);
     border-radius: 0;
+    background: transparent;
+    color: inherit;
     padding: 18px !important;
   }
 
@@ -964,5 +984,432 @@ h1 {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    min-width: 0;
+    margin: 0;
+    overflow: visible !important;
+    background: var(--paper) !important;
+    color: var(--ink) !important;
+    font-size: 11pt;
+    scroll-behavior: auto !important;
+  }
+
+  body.menu-open {
+    overflow: visible !important;
+  }
+
+  .site-header,
+  .skip-link,
+  .pdf-download {
+    display: none !important;
+  }
+
+  main,
+  section,
+  figure,
+  article,
+  div,
+  img {
+    max-width: 100% !important;
+  }
+
+  section,
+  figure,
+  article,
+  blockquote,
+  .section-copy,
+  .section-head,
+  .numbers-head,
+  .future-item,
+  .number-card,
+  .timeline-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero,
+  .story,
+  .numbers,
+  .timeline-section,
+  .philosophy,
+  .production,
+  .learning,
+  .future,
+  .finale {
+    width: 210mm;
+    min-height: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    background-clip: border-box !important;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .finale {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .hero {
+    display: grid !important;
+    grid-template-columns: 98mm 112mm !important;
+    height: 297mm !important;
+    background: var(--black) !important;
+    color: var(--white) !important;
+  }
+
+  .hero-media {
+    min-height: 0 !important;
+    height: 297mm !important;
+    background: var(--black) !important;
+  }
+
+  .hero-media::after {
+    background:
+      linear-gradient(90deg, rgba(23, 21, 18, 0) 42%, rgba(23, 21, 18, 0.58) 100%),
+      linear-gradient(0deg, rgba(23, 21, 18, 0.42) 0%, rgba(23, 21, 18, 0) 42%) !important;
+  }
+
+  .hero-media img {
+    height: 297mm !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+
+  .hero-copy {
+    align-self: center !important;
+    max-width: none !important;
+    padding: 18mm 11mm 18mm 0 !important;
+  }
+
+  h1 {
+    margin-bottom: 9mm !important;
+    font-size: 42pt !important;
+    line-height: 0.96 !important;
+  }
+
+  .hero-lead {
+    margin-bottom: 9mm !important;
+    font-size: 15pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero-actions {
+    gap: 5mm !important;
+  }
+
+  .button {
+    min-height: 12mm !important;
+    padding: 0 6mm !important;
+    background: var(--white) !important;
+    color: var(--black) !important;
+    font-size: 8.5pt !important;
+  }
+
+  .instagram-link,
+  .final-instagram {
+    color: rgba(255, 253, 250, 0.78) !important;
+    font-size: 9pt !important;
+  }
+
+  .section-grid,
+  .numbers,
+  .timeline-section,
+  .philosophy,
+  .learning,
+  .future,
+  .finale {
+    padding: 13mm !important;
+  }
+
+  .section-grid {
+    display: grid !important;
+    grid-template-columns: 82mm 102mm !important;
+    gap: 10mm !important;
+    align-items: center !important;
+  }
+
+  .story,
+  .production {
+    height: 297mm !important;
+  }
+
+  .section-copy h2,
+  .section-head h2,
+  .numbers-head h2,
+  .learning-copy h2,
+  .future h2 {
+    margin-bottom: 7mm !important;
+    font-size: 30pt !important;
+    line-height: 1.04 !important;
+  }
+
+  .section-copy p,
+  .learning-copy p,
+  .future-item p,
+  .philosophy p {
+    color: var(--text) !important;
+    font-size: 10.5pt !important;
+    font-weight: 600 !important;
+    line-height: 1.48 !important;
+  }
+
+  .eyebrow {
+    margin-bottom: 5mm !important;
+    font-size: 8pt !important;
+  }
+
+  .statement {
+    font-size: 17pt !important;
+    line-height: 1.18 !important;
+  }
+
+  .image-frame,
+  .image-frame-wide {
+    min-height: 0 !important;
+    height: 205mm !important;
+    border-radius: var(--radius) !important;
+    background: var(--sand) !important;
+  }
+
+  .image-frame img,
+  .future-images img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .production .image-frame img {
+    object-position: center center !important;
+  }
+
+  figcaption {
+    left: 5mm !important;
+    bottom: 5mm !important;
+    padding: 2mm 3mm !important;
+    background: rgba(23, 21, 18, 0.72) !important;
+    color: var(--white) !important;
+    font-size: 7.2pt !important;
+    backdrop-filter: none !important;
+  }
+
+  .numbers {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 9mm !important;
+    height: 297mm !important;
+    align-content: center !important;
+    background: var(--white) !important;
+  }
+
+  .numbers-head {
+    position: static !important;
+  }
+
+  .number-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .number-card {
+    min-height: 52mm !important;
+    padding: 9mm !important;
+    background: var(--paper) !important;
+  }
+
+  .number-card strong {
+    font-size: 42pt !important;
+  }
+
+  .number-card span {
+    margin-top: 6mm !important;
+    font-size: 10pt !important;
+  }
+
+  .timeline-section {
+    display: grid !important;
+    height: 297mm !important;
+    align-content: center !important;
+    background: var(--paper) !important;
+  }
+
+  .timeline {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    margin: 8mm 0 0 3mm !important;
+    border-top: 0 !important;
+    border-left: 1px solid var(--line) !important;
+  }
+
+  .timeline-item {
+    min-height: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+    padding: 0 0 7mm 9mm !important;
+  }
+
+  .timeline-item + .timeline-item {
+    padding-top: 7mm !important;
+  }
+
+  .timeline-item::before {
+    top: 1mm !important;
+    left: -2mm !important;
+  }
+
+  .timeline-item + .timeline-item::before {
+    top: 8mm !important;
+  }
+
+  .timeline time {
+    margin-bottom: 3mm !important;
+    font-size: 19pt !important;
+  }
+
+  .timeline p {
+    max-width: none !important;
+    font-size: 10pt !important;
+    line-height: 1.42 !important;
+  }
+
+  .philosophy {
+    display: grid !important;
+    height: 297mm !important;
+    align-content: center !important;
+    background: var(--black) !important;
+    color: var(--white) !important;
+  }
+
+  .philosophy h2 {
+    margin-bottom: 10mm !important;
+    color: var(--white) !important;
+    font-size: 38pt !important;
+    line-height: 1.04 !important;
+  }
+
+  .philosophy p {
+    color: rgba(255, 253, 250, 0.78) !important;
+  }
+
+  .values {
+    gap: 3mm !important;
+    margin-bottom: 9mm !important;
+  }
+
+  .values li,
+  .production-list span {
+    padding: 2.4mm 3.4mm !important;
+    font-size: 8.5pt !important;
+  }
+
+  .learning {
+    grid-template-columns: 1fr !important;
+    gap: 10mm !important;
+    height: 297mm !important;
+    align-content: center !important;
+    background: var(--sand) !important;
+  }
+
+  .quote {
+    padding: 7mm 0 7mm 8mm !important;
+    color: var(--black) !important;
+    font-size: 25pt !important;
+    line-height: 1.14 !important;
+  }
+
+  .future {
+    height: 297mm !important;
+    display: grid !important;
+    align-content: center !important;
+    background: var(--paper) !important;
+  }
+
+  .future-layout {
+    display: grid !important;
+    grid-template-columns: 92mm 92mm !important;
+    gap: 8mm !important;
+  }
+
+  .future-list {
+    background: var(--line) !important;
+  }
+
+  .future-item {
+    min-height: 0 !important;
+    padding: 5mm !important;
+    background: var(--white) !important;
+  }
+
+  .future-item h3 {
+    margin-bottom: 2mm !important;
+    font-size: 9pt !important;
+  }
+
+  .future-images {
+    gap: 5mm !important;
+  }
+
+  .future-images figure,
+  .future-images figure:nth-child(2) {
+    height: 78mm !important;
+    border-radius: var(--radius) !important;
+    background: var(--sand) !important;
+  }
+
+  .finale {
+    display: grid !important;
+    min-height: 297mm !important;
+    place-items: center !important;
+    background: var(--black) !important;
+    color: var(--white) !important;
+    text-align: center !important;
+  }
+
+  .finale h2 {
+    margin-bottom: 12mm !important;
+    color: var(--white) !important;
+    font-size: 38pt !important;
+    line-height: 1.04 !important;
+  }
+
+  .finale p {
+    color: var(--white) !important;
+    font-size: 20pt !important;
+  }
+
+  .finale span {
+    color: rgba(255, 253, 250, 0.72) !important;
+    font-size: 10pt !important;
   }
 }
